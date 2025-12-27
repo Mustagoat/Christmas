@@ -50,4 +50,8 @@ body {
       to {
         transform: translateY(110vh);
       }
+
+    }
+    audio {
+      display: none;
     }
