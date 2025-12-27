@@ -15,7 +15,7 @@ const music = document.getElementById("bg-music");
 
     function startMusic() 
     {
-      music.volume = 0.5; // adjust volume (0.0–1.0)
+      music.volume = 0.5;
       music.play().catch(() => {});
       document.removeEventListener("click", startMusic);
       document.removeEventListener("keydown", startMusic);
@@ -25,3 +25,4 @@ const music = document.getElementById("bg-music");
     document.addEventListener("click", startMusic);
     document.addEventListener("keydown", startMusic);
     document.addEventListener("touchstart", startMusic);
+
